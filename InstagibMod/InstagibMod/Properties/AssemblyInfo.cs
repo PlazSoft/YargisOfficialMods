@@ -32,3 +32,6 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.0.0")]
+
+// Indicate that mods / components / etc should be loaded from this assembly.
+[assembly: Yargis.YargisModAssembly()]

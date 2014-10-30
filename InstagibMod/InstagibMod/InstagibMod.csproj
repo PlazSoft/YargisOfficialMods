@@ -102,8 +102,10 @@
     <Reference Include="XEL">
       <HintPath>..\..\Yargis\Yargis\Yargis\bin\x86\Debug\XEL.dll</HintPath>
     </Reference>
-    <Reference Include="Yargis">
-      <HintPath>..\..\Yargis\Yargis\Yargis\bin\x86\Debug\Yargis.exe</HintPath>
+    <Reference Include="Yargis, Version=1.8.4.10, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\..\..\..\Visual Studio 2010\Projects\Yargis\Yargis\Yargis\bin\x86\Release\Yargis.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

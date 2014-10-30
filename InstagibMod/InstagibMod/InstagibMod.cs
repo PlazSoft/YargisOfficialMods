@@ -9,9 +9,9 @@ using Yargis;
 
 namespace InstagibMod
 {
-    class InstagibMod : YargisMod, ISessionMod
+    public class InstagibMod : ISessionMod
     {
-        public override string Name
+        public string Name
         {
             get { return "Instagib"; }
         }
@@ -33,9 +33,8 @@ namespace InstagibMod
 
         public void SessionStart()
         {
-            //PositiveInfinity is a special case that causes
-            //damage to destroy the object.
-            Global.Session.Level._Rules.DamageRatio = float.PositiveInfinity;
+            //Make all damage deal maximum damage
+            Global.Session.Level._Rules.DamageRatio = float.MaxValue;
         }
 
         public void SessionStartRound()
